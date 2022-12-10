@@ -2,23 +2,16 @@
     "name": "NYT Article Hack",
     "description": "Читайте NY Times без підписки",
     "version": "1.0",
-    "manifest_version": 1,
-    "action": {
-        "default_icon": {
-            "16": "https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png",
-            "32": "https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png",
-            "48": "https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png",
-            "128": "https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png"
-        }
-    },
-    "icons": {
-        "16": "https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png",
-        "32": "https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png",
-        "48": "https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png",
-        "128": "https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png"
-    },
+    "manifest_version": 3,
+    "author": "wladislaw353",
     "permissions": [
         "activeTab",
         "scripting"
+    ],
+    "content_scripts": [
+        {
+            "matches": [ "https://www.nytimes.com/*" ],
+            "css": [ "app.css" ]
+        }
     ]
 }

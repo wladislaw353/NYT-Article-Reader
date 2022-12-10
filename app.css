@@ -1,0 +1,6 @@
+#standalone-footer {
+    display: none !important;
+}
+#site-content {
+    position: unset !important;
+}
